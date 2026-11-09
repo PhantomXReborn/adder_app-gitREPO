@@ -51,8 +51,8 @@ class _MyHomePageState extends State<MyHomePage> {
   void _calculateTotal() {
     setState(() {
       try {
-        var num1 = int.parse(_controller_1.text);
-        var num2 = int.parse(_controller_2.text);
+        var num1 = double.parse(_controller_1.text);
+        var num2 = double.parse(_controller_2.text);
         var sum = num1 + num2;
         _total = sum.toString();
       } catch (e) {
